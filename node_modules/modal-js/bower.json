@@ -1,0 +1,36 @@
+{
+  "name": "modal-module",
+  "homepage": "https://github.com/mkay581/modal-js",
+  "authors": [
+    "Mark Kennedy <mkay581@gmail.com>"
+  ],
+  "description": "Easily implement modals using minimal javascript. Supports Meteor, AngularJS, React, Polymer and any CSS library, e.g. Bootstrap.",
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "modal",
+    "modals",
+    "modal component",
+    "modal module",
+    "react modal",
+    "angular modal",
+    "javascript modal",
+    "es6 modal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "src/modal.js",
+  "dependencies": {
+    "lodash": "^4.8.2",
+    "module-js": "^5.2.0"
+  }
+}
