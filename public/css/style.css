@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+body > h1{
+  text-align: center;
+}
+
+/***************************************
+
+*****************************************/
+.gameCon{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#wheel{
+  text-align: center;
+}
+
+#won{
+  color: green;
+}
+
+#lost{
+  color: red;
+}
+
+/***************************************
+
+*****************************************/
+.play{
+  display:grid;
+  text-align: center;
+  font-size: 1.5em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-areas:
+    "zero three six nine twelve fifteen eighteen tone tfour tseven thirty ththree thsix fcol"
+    "zero two five eight eleven fourteen seteen twenty twthree twsix twnine thtwo thfive scol"
+    "zero one four sev ten thteen sixteen nineteen twtwo twfive tweight thone thfour tcol"
+    ". f f f f s s s s t t t t ."
+    ". b b e e r r bl bl o o l l .";
+  grid-gap: 5px;
+}
+
+.zero{
+  grid-area: zero;
+}
+
+.ratio{
+  grid-area: f;
+}
+
+.ratioTwo{
+  grid-area: s;
+}
+
+.ratioThree{
+  grid-area: t;
+}
+
+.first{
+  grid-area: b;
+}
+
+.even{
+  grid-area: e;
+}
+.red{
+  grid-area: r;
+  background-color: red;
+  color: red;
+}
+.black{
+  grid-area: bl;
+  background-color: black;
+}
+.odd{
+  grid-area: o;
+}
+.last{
+  grid-area: l;
+}
+
+.play section:hover{
+  background-color: rgb(251,186,22);
+}
+
+/***************************************
+
+*****************************************/
+
+.num{
+  background-color: black;
+  color: white;
+}
+
+.r{
+  background-color: red;
+}
+
+/* .choiceChoice{
+  background: url("../images/coin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+} */
+
+/***************************************
+MEDIA QUERIES
+*****************************************/
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* mobile */
+@media screen and (max-width: 767px){
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roulette Game</title>
+  <link rel="stylesheet" href="public/css/style.css">
+
+</head>
+
+<body>
+  <h1>Roulette Game</h1>
+  <section class="gameCon">
+    <section id="wheel">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </section>
+    <section>
+      <h2>Balance: $<span id="balance"></span></h2>
+      <h2>Bet: <input id="bet" type="text" placeholder="$"></h2>
+      <h2>Won: <span id="won"></span></h2>
+      <h2>Lost: <span id="lost"></span></h2>
+      <input type="button" value="spin" id='spin' />
+    </section>
+  </section>
+
+  <section class="play">
+    <section class="choice zero">0</section>
+    <section class="choice num r">3</section>
+    <section class="choice num">6</section>
+    <section class="choice num r">9</section>
+    <section class="choice num r">12</section>
+    <section class="choice num">15</section>
+    <section class="choice num r">18</section>
+    <section class="choice num r">21</section>
+    <section class="choice num">24</section>
+    <section class="choice num r">27</section>
+    <section class="choice num r">30</section>
+    <section class="choice num">33</section>
+    <section class="choice num r">36</section>
+    <section class="choice col" value="colOne">2:1</section>
+
+    <section class="choice num">2</section>
+    <section class="choice num r">5</section>
+    <section class="choice num">8</section>
+    <section class="choice num">11</section>
+    <section class="choice num r">14</section>
+    <section class="choice num">17</section>
+    <section class="choice num">20</section>
+    <section class="choice num r">23</section>
+    <section class="choice num">26</section>
+    <section class="choice num">29</section>
+    <section class="choice num r">32</section>
+    <section class="choice num">35</section>
+    <section class="choice col" value="colTwo">2:1</section>
+
+    <section class="choice num r">1</section>
+    <section class="choice num">4</section>
+    <section class="choice num r">7</section>
+    <section class="choice num">10</section>
+    <section class="choice num">13</section>
+    <section class="choice num r">16</section>
+    <section class="choice num r">19</section>
+    <section class="choice num">22</section>
+    <section class="choice num r">25</section>
+    <section class="choice num">28</section>
+    <section class="choice num">31</section>
+    <section class="choice num r">34</section>
+    <section class="choice col" value="colThree">2:1</section>
+
+    <section class="choice ratio" value="first">1st 12</section>
+    <section class="choice ratioTwo" value="second">2nd 12</section>
+    <section class="choice ratioThree" value="third">3rd 12</section>
+
+    <section class="choice first" value="begin">1-18</section>
+    <section class="choice even" value="even">Even</section>
+    <section class="choice red" value="red">Red</section>
+    <section class="choice black" value="black">Black</section>
+    <section class="choice odd" value="odd">Odd</section>
+    <section class="choice last" value="end">18-36</section>
+  </section>
+
+  <script src="public/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
