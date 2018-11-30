@@ -30,7 +30,7 @@ module.exports = function(app, passport, db) {
 // post you are sending form data, body parser breaks down form data, all info falls into req, form when makes post sends data, post is pulling the name property out of that data
 
     app.post('/', (req, res) => {
-      db.collection('orders').save({name: req.body.cust, msg: req.body.order, complete: false}, (err, result) => {
+      db.collection('orders').save({name: req.body.name, win: 0, loss: 0}, (err, result) => {
         if (err) return console.log(err)
         console.log(req.body);
         console.log('saved to database')
